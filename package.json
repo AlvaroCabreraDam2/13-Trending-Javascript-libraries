@@ -1,0 +1,17 @@
+{
+  "name": "practice_particles.js",
+  "version": "1.0.0",
+  "description": "13 Trending Javascript libraries",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alvaro Cabrera Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.4.0",
+    "particles.js": "^2.0.0"
+  }
+}

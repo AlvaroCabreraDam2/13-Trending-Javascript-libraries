@@ -9,7 +9,7 @@ html, body {
 
 /** Particles Container**/
 #particles-js {
-    background-color: #404040;
+    background-color: #101010;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -37,44 +37,37 @@ html, body {
     margin-bottom: 20px;	
 }
 
-
-
 a {
 	text-decoration:none;	
 }
 
 #cabecera {
-		height: 75px;
-		width: 100%;
-		position:fixed;
-		top:0;
-		background-color:#011627;
+	height: 75px;
+	width: 100%;
+	position:fixed;
+	top:0;
+	background-color:#000000;
 }
 
 .cabeceraB {
-		height: 75px;
-		width: 75px;
-		position:relative;
-		float:left;	
-		background-color:#011627;
-		color:#FDFFFC;
-        text-align:center;
-        left:1%;
-		
+	height: 75px;
+	width: 75px;
+	position:relative;
+	float:left;	
+	background-color:#000000;
+	color:#FDFFFC;
+    text-align:center;
+    left:1%;	
 }
 
 .cabeceraB:hover {
-	
-		background-color:#FDFFFC;
-		color:#011627;
-		
+    background-color:#FDFFFC;
+	color:#000000;	
 }
 
 #logo {
-		
-		height:100%;
-		width:100%;
-	
+    height:100%;
+	width:100%;	
 }
 
 #tope {
