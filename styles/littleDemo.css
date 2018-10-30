@@ -1,0 +1,21 @@
+/** Html and Boddy**/
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+	text-align:justify;
+}
+
+/** Text**/
+h1 {
+    margin-left: 30px;
+}
+
+/** Particles container **/
+#particles-js {
+    margin-left: 30px;
+    height: 200px;
+    width: 550px;
+    background-color: black;
+}
