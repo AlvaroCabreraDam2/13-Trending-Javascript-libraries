@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Hollow News </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel='stylesheet' href='css/d.css'>
+		<script src="js/js.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			
+			var a = ["img/anuncio.png", "img/anuncio2.png", "img/anuncio3.png", "img/anuncio4.png"];
+			
+			var contador = 0;
+			var myVar;
+			
+			$(document).ready(function(){
+				myVar = setInterval(alertFunc, 5000);    
+			});
+			
+			function alertFunc() {
+				if (contador == 3) {
+					contador = 0;
+				} else {
+					contador ++;
+				}
+				$("#anuncio1").attr("src", a[contador]);   
+			};
+			
+		</script>
+	</head>
+	<body>
+		<div  id="anuncio">
+			<a href="anuncio.html"  target="_blank">
+				<img id="anuncio1" src="img/anuncio.png" alt="imagen">
+			</a>
+		</div>
+	</body>
+</html>

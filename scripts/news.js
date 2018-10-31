@@ -1,14 +1,76 @@
-// Variables
+﻿var cargado = 1;
+var activado = false;
 
-// Main activity
-window.onload = function() { 
-    // Iniciar particulas
-    startParticles();
-}
+$(document).ready(function(){
+	startParticles();
 
-// Functions
+	$(window).scroll(function () {
+		if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height() && activado == true) {
+			cargarNoticias();
+		}
+	});
+	
 
-// particles.js
+//Activar-desactivar scroll
+$(".toggle").click(function(){
+	if (activado == false) {
+		$("#desactivado").hide();
+		$("#activado").show();
+		activado = true;
+		$("#boton").hide();
+	} else {
+		$("#activado").hide();
+		$("#desactivado").show();
+		activado = false;
+		$("#boton").show();
+	}
+});
+
+
+	//Cambiar imagen modal
+	$("body").on("click", ".imagenes", function(){
+		var id = $(this).attr('id');
+		$("#imagenModal").attr("src","img/"+id+"Big.png");
+
+	});
+});
+
+//Metodos
+function cargarNoticias() {
+	if (cargado < 3) {
+		$("#gif").show();
+		$.getJSON("https://rawgit.com/JuanAntonioBieto/Pagina-de-noticias/master/json/" + cargado + ".json", function (jsonObject) {
+			añadirNoticias(jsonObject);
+			$("#gif").hide();
+		}); 
+		cargado++;
+		if (cargado > 2){
+			$('#boton').text('No hay más noticias');
+			$("#boton").show();
+		}
+	}	
+};
+
+
+function añadirNoticias(json) {
+	$.each(json, function (i, item) {
+		$("#contenedor5").append(
+			'<div class="container-fluid noticias">' +
+			'<div class="row" >' +
+			'<div class="col-sm-4">' + 
+			'<img data-toggle="modal" data-target="#myModal" class="img-responsive imagenes" id="imagen'  + (((cargado - 2)*3 + i + 1)+ 4) + '"src="' + item.imgbig +'"alt="imagen">' +
+			'</div>' +
+			'<div class="col-sm-8">' +
+			'<h2 class="titulos">' + item.title + '</h2>' +
+			'<p class="textos text-justify">' + item.description + '</p>' +
+			'<p class="fechas">' + item.datetime + '</p>' +
+			'</div>' +
+			'</div>' +
+			'</div>');
+
+	})
+};			
+
 function startParticles() {
     particlesJS('particles-js', {
             "particles": {
@@ -66,9 +128,9 @@ function startParticles() {
                 },
                 "move": {
                     "enable": true,
-                    "speed": 12,
+                    "speed": 6,
                     "direction": "bottom-left",
-                    "random": true,
+                    "random": false,
                     "straight": true,
                     "out_mode": "out",
                     "attract": {

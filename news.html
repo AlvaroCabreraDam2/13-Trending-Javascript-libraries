@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title> Hollow Knight News </title>
+	<meta name="description" content="Hollow Knight es un videojuego metroidvania desarrollado y publicado por Team Cherry.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	<meta property="og:site_name" content="Hollow Knight News">
+	<meta property="og:url" content="https://rawgit.com/JuanAntonioBieto/Pagina-de-noticias/master/principal.html">
+	<meta property="og:title" content="Hollow Knight">
+	<meta property="og:image" content="https://rawgit.com/JuanAntonioBieto/Pagina-de-noticias/master/img/Icono.png">
+	<meta property="og:description" content="Noticias de Hollow Knight">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel='stylesheet' href='styles/news.css'>
+	<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+	<link rel="alternate" type="application/rss+xml" title="rss" href="rss/rss.xml">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/particles.js"></script>
+	<script src="scripts/news.js"></script>
+</head>
+<body>
+
+	<div id = "particles-js"> </div>
+
+	<div id = "page">
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="principal.html">Hollow Knight News</a></li>
+			</ul>
+			<ul class="nav navbar-nav" id="iconos">
+				<li> <a><i title="Scroll desactivado" id="desactivado" class="fas fa-toggle-off toggle icon"></i>
+					<i title="Scroll activado" id="activado" class="fas fa-toggle-on toggle icon"></i></a>
+				</li>					
+				<li><a href="https://discord.gg/u85fXP"><i class="fab fa-discord"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron " >
+		<a href="principal.html">
+			<img id="cabecera" src="img/logo.png" alt="Hollow Knight News">
+		</a>
+	</div>
+	<div id="anuncio">	
+		<iframe  id="anuncio2"   src="anuncio.html" ></iframe>
+	</div>
+	<div id="anuncio4" class="center-block">	
+		<iframe  id="anunciom" class="center-block"  src="anunciom.html" ></iframe>
+	</div>
+	<div class="container-fluid" id="contenedor">
+		<div class="container-fluid noticias">
+			<div class="row" >
+				<div class="col-sm-4">
+					<img data-toggle="modal" data-target="#myModal" class="img-responsive imagenes" id="imagen1" src="img/life.png" alt="imagen">
+				</div>
+				<div class="col-sm-8">
+					
+					<h2 class="titulos" id="titulo1"> <a href="noticia1.html"> Nueva actualización: Lifeblood </a> </h2>
+					
+					<p class="textos text-justify">Hollow Knight ha recibido una actualización la cual mejoran y cambian varios aspectos del juego, añáden un nuevo boss y nuevos elementos para el mapa. Esta actualización no tiene teaser, ya que no forma parte de las 3 expansiones que estaban planeadas.</p> 
+					<p class="fechas"> 24/04/2018 | 12:47 </p>
+					
+				</div>
+			</div>	
+		</div>
+		
+		<div class="container-fluid noticias">
+			<div class="row" >
+				<div class="col-sm-4"  >
+					<img data-toggle="modal" data-target="#myModal" class="img-responsive imagenes" id="imagen2" src="img/god.png" alt="imagen">
+				</div>
+				<div class="col-sm-8"  >
+					
+					<h2 class="titulos" id="titulo2"> <a href="noticia2.html"> Anunciado nuevo: DLC Gods & Glory </a> </h2>
+					
+					<p class="textos text-justify">Team Cherry ha anunciado, el tercer y último contenido gratuito de Hollow Knight: Gods & Glory. Este DLC trae nuevas misiones, personajes, amuletos, jefes, música y un nuevo modo de juego. Este contenido llegará a principios de 2018. </p> 
+					
+					<p class="fechas"> 30/01/2018 | 20:49 </p>
+					
+				</div>
+			</div>	
+			
+		</div>
+		<div class="container-fluid noticias">
+			<div class="row" >
+				<div class="col-sm-4"  >
+					<img data-toggle="modal" data-target="#myModal" class="img-responsive imagenes" id="imagen3" src="img/indie.png" alt="imagen">
+				</div>
+				<div class="col-sm-8"  >
+					
+					<h2 class="titulos text-justify" id="titulo3"> Hollow Knight cuarto como Indie del año </h2>
+					
+					<p class="textos text-justify"> IndieDB es una web de referencia para la comunidad de jugadores. Como suele hacer cada año, ha preguntado a sus lectores cuál es el mejor
+						indie que han jugado de este año, y ha publicado los resultados. El ganador ha sido Foxhole, en el caso de Hollow Knight ha quedado cuarto.
+						
+					</p> 
+					<p class="fechas"> 29/12/2017 | 13:15 </p>
+				</div>
+			</div>	
+			
+		</div>
+		<div class="container-fluid noticias">
+			<div class="row" >
+				<div class="col-sm-4"  >
+					<img data-toggle="modal" data-target="#myModal" class="img-responsive imagenes" id="imagen4" src="img/switch.png" alt="imagen">
+				</div>
+				<div class="col-sm-8"  >
+					
+					<h2 class="titulos" id="titulo4"> Hollow Knight retrasado en Nintendo Switch </h2>
+					
+					<p class="textos text-justify"> Team Cherry ha anunciado que aplaza el lanzamiento de Hollow Knight hasta 2018,
+						"A pesar de nuestros esfuerzos recientemente hemos tomado la difícil decisión de retrasar Hollow Knight" informan los autores del juego.
+					</p> 
+					<p class="fechas">  14/11/2017 | 17:38 </p>
+					
+				</div>
+			</div>		
+		</div>
+		<div  id="contenedor5">
+			
+		</div>
+		<div id="gif" class="loader center-block"></div>
+		<button onclick="cargarNoticias()" type="button" id="boton" >Cargar más noticias</button>
+
+		<br>
+		<br>
+		
+	</div>
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive" id="imagenModal" src="#" alt="imagen">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+	
+</body>
+</html>

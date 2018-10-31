@@ -15,7 +15,8 @@ h1 {
 /** Particles container **/
 #particles-js {
     margin-left: 30px;
-    height: 200px;
+    height: 310px;
     width: 550px;
-    background-color: black;
+    background-image: url(../img/background.png);
+    background-size: cover;
 }
