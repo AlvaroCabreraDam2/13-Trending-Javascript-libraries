@@ -13,14 +13,14 @@ function startParticles() {
     particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 160,
+                    "value": 80,
                     "density": {
                         "enable": true,
                         "value_area": 800
                     }
                 },
                 "color": {
-                    "value": "#ef3c32"
+                    "value": "#ffffff"
                 },
                 "shape": {
                     "type": "circle",
@@ -32,14 +32,14 @@ function startParticles() {
                         "nb_sides": 5
                     },
                     "image": {
-                        "src": "../img/particle.png",
+                        "src": "img/github.svg",
                         "width": 100,
                         "height": 100
                     }
                 },
                 "opacity": {
                     "value": 0.5,
-                    "random": true,
+                    "random": false,
                     "anim": {
                         "enable": false,
                         "speed": 1,
@@ -58,7 +58,7 @@ function startParticles() {
                     }
                 },
                 "line_linked": {
-                    "enable": false,
+                    "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
                     "opacity": 0.4,
@@ -66,10 +66,10 @@ function startParticles() {
                 },
                 "move": {
                     "enable": true,
-                    "speed": 12,
-                    "direction": "bottom-left",
-                    "random": true,
-                    "straight": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
                     "out_mode": "out",
                     "attract": {
                         "enable": false,
@@ -82,11 +82,11 @@ function startParticles() {
                 "detect_on": "canvas",
                 "events": {
                     "onhover": {
-                        "enable": false,
+                        "enable": true,
                         "mode": "repulse"
                     },
                     "onclick": {
-                        "enable": false,
+                        "enable": true,
                         "mode": "push"
                     },
                     "resize": true
