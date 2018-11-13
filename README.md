@@ -1,4 +1,4 @@
-# 13-Trending-Javascript-libraries
+# Particles.js exposition
 
 https://gitcdn.xyz/repo/AlvaroCabreraDam2/13-Trending-Javascript-libraries/master/littleDemo.html
 
